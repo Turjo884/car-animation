@@ -16,7 +16,7 @@
 .road{
     width: 200%;
     height: 250px;
-    /* display: block; */
+    display: block;
     position: absolute;
     background: url(../img/road-cut.jpg);
     background-repeat: repeat-x;
@@ -43,7 +43,29 @@
     width: 100%;
     animation: car 1s linear infinite;
 }
+.second{
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    z-index: 4;
+    width: 400px;
+}
+.second img{
+    width: 120%;
+    animation: dusra 1s linear infinite;
+}
 @keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+@keyframes dusra{
     100%{
         transform: translateY(-1px);
     }
@@ -74,7 +96,42 @@
     left: 43px;
     position: absolute;
 }
+.chaka{
+    position: absolute;
+    bottom: 105px;
+    left: 20%;
+    z-index: 4;
+    /* transform: translateX(-30%); */
+}
+.chaka img{
+    width: 98px;
+    height: 75px;
+    animation: cube .5s linear infinite;
+}
+.chaka .sala-1{
+    position: absolute;
+    left: -70px;
+}
+.chaka .sala-2{
+    position: absolute;
+    left: 165px;
+}
+.driver{
+    position: absolute;
+    left: 24%;
+    bottom: 114px;
+    z-index: 4;
+}
+.driver .classy{
+    width: 100px;
+    height: 60px;
+}
 @keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes cube{
     100%{
         transform: rotate(360deg);
     }
